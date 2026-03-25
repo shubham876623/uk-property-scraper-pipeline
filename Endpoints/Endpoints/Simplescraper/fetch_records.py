@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-SUPABASE_URL = "https://xbnukvrzhcemmaeffhzk.supabase.co/rest/v1/SQLEPCCertificateSimpleScrape"
+SUPABASE_URL = os.getenv("SUPABASE_URL", "") + "/rest/v1/SQLEPCCertificateSimpleScrape"
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")  # 👈 use service_role key here
 
 def fetch_all_records():
