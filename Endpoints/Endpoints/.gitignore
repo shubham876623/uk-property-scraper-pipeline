@@ -1,0 +1,36 @@
+# Environment & secrets
+.env
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+
+# Logs
+logs/
+rightmovescraper/logs/
+epc_deep_scraper/logs/
+
+# Data files (large/sensitive)
+data.csv
+rightmovescraper/data/
+rightmovescraper/debug_output.json
+epc_deep_scraper/data/
+
+# Zip archives
+*.zip
+
+# Tracker files (runtime generated)
+Simplescraper/epc_count_tracker.csv
+Simplescraper/epc_count_tracker_server.csv
+
+# Misc
+script2.txt
+deployment doc.txt
+*.pdf
+*.log
+screenshot_*.png
